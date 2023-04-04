@@ -1,11 +1,29 @@
 # execution-time-logger
-Annotation based logger calculates time taken per method level. 
+Annotation based logger calculates time taken per method level.
 Use it as method level as an annotated interface.
 
-@LogExecutionTimeDebugExceptionally, @LogExecutionTime, @LogExecutionTimeExceptionally, @LogExecutionTimeDebug.
+## Available logging options
+* @LogExecutionTime
+* @LogExecutionTimeExceptionally
+* @LogExecutionTimeDebug
+* @LogExecutionTimeDebugExceptionally
 
-	@LogExecutionTimeExceptionally
-	public void myTestMethod(){
+## Usage:-
 
-	}
+* Checkout and maven install locally
+* Import the dependency into the required project
 
+
+        <dependency>
+            <groupId>io.jayaprabahar.springboot</groupId>
+            <artifactId>execution-time-logger</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+* Add the required annotation
+
+
+        @LogExecutionTimeExceptionally
+    	public void myTestMethod(){
+    
+    	}
